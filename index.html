@@ -17,13 +17,19 @@
             <h2 class="sub-title">English to Panlinian</h2>
             <textarea type="text" class="input" id="english-input" placeholder="english goes here"></textarea>
             <button class="button" id="convert-to-panlinian">Translate</button>
-            <textarea type="text" class="input" id="panlinian-output" readonly></textarea>
+            <div class="output-wrapper">
+                <textarea type="text" class="input" id="panlinian-output" readonly></textarea>
+                <button class="button copy-button" id="panlinian-copy">Copy</button>
+            </div>
         </div>
         <div class="sub-wrapper">
             <h2 class="sub-title">Panlinian to English</h2>
             <textarea type="text" class="input" id="panlinian-input" placeholder="panlinian goes here"></textarea>
             <button class="button" id="convert-to-english">Translate</button>
-            <textarea type="text" class="input" id="english-output" readonly></textarea>
+            <div class="output-wrapper">
+                <textarea type="text" class="input" id="english-output" readonly></textarea>
+                <button class="button copy-button" id="english-copy">Copy</button>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>
