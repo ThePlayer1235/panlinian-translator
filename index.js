@@ -7,6 +7,9 @@ const panlinianInput = document.getElementById("panlinian-input");
 const toEnglishButton = document.getElementById("convert-to-english");
 const englishOutput = document.getElementById("english-output");
 
+const panlinianCopyButton = document.getElementById("panlinian-copy");
+const englishCopyButton = document.getElementById("english-copy");
+
 toPanlinianButton.addEventListener("click", element => {
     const input = englishInput.value;
     const output = panlinianOutput;
@@ -54,4 +57,12 @@ toEnglishButton.addEventListener("click", element => {
         binString += String.fromCharCode(parseInt(bin, 2));
     });
     output.value = binString;
+});
+
+panlinianCopyButton.addEventListener("click", element => {
+    navigator.clipboard.writeText(panlinianOutput.value);
+});
+
+englishCopyButton.addEventListener("click", element => {
+    navigator.clipboard.writeText(englishOutput.value);
 });
