@@ -82,3 +82,26 @@ h1, h2 {
 
     margin-bottom: 8px;
 }
+
+.output-wrapper {
+    width: 306px; /* dude i have no fucking idea why it only works with 306px */
+    height: 106px;
+    margin-bottom: 8px;
+}
+
+.output-wrapper textarea {
+    margin: 0;
+}
+
+.copy-button {
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    float: right; /* dont murder me please */
+    bottom: 32px;
+    box-shadow: none;
+}
