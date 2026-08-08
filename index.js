@@ -59,10 +59,22 @@ toEnglishButton.addEventListener("click", element => {
     output.value = binString;
 });
 
+let panlinianTimout;
 panlinianCopyButton.addEventListener("click", element => {
     navigator.clipboard.writeText(panlinianOutput.value);
+    panlinianCopyButton.textContent = "Copied!";
+    clearTimeout(panlinianTimout);
+    panlinianTimout = setTimeout(function() {
+        panlinianCopyButton.textContent = "Copy";
+    }, 1000);
 });
 
+let englishTimout;
 englishCopyButton.addEventListener("click", element => {
     navigator.clipboard.writeText(englishOutput.value);
+    englishCopyButton.textContent = "Copied!";
+    clearTimeout(englishTimout);
+    englishTimout = setTimeout(function() {
+        englishCopyButton.textContent = "Copy";
+    }, 1000);
 });
